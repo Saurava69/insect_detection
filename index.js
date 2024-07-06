@@ -11,7 +11,7 @@ async function identifyInsect(imageData) {
       {
         method: "POST",
         headers: {
-          "Api-Key": "cOhtSiXL3UbXrF8LRCsv7rpsnL4aRH0aLseQMBtBjjTfQqKiEQ",
+          "Api-Key": process.env.API_KEY,
         },
         body: formData,
       }
