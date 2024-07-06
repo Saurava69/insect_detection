@@ -1,3 +1,15 @@
+// Prevent context menu (right-click)
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+
+// Prevent F12 key (Developer Tools)
+document.addEventListener('keydown', function(event) {
+    // Replace with your preferred key combination if needed (e.g., Ctrl+Shift+I)
+    if (event.key === 'F12') {
+        event.preventDefault();
+    }
+});
 async function identifyInsect(imageData) {
   const formData = new FormData();
   formData.append("images", imageData);
@@ -11,7 +23,7 @@ async function identifyInsect(imageData) {
       {
         method: "POST",
         headers: {
-          "Api-Key": process.env.API_KEY,
+          "Api-Key":"cOhtSiXL3UbXrF8LRCsv7rpsnL4aRH0aLseQMBtBjjTfQqKiEQ",
         },
         body: formData,
       }
