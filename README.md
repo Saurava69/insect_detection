@@ -1,6 +1,7 @@
 # Insect Identification App
 
 A secure React application that identifies insects using AI-powered image recognition, optimized for search engines and deployed on a custom subdomain.
+![Preview](https://identify-insect.syntaxengineer.com/screenshot.png)
 
 ## 🌐 Live Demo
 
