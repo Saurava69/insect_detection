@@ -1,15 +1,15 @@
 # Netlify redirects file
 
 # Redirect main domain to subdomain for SEO consolidation
-https://syntaxengineer.com/insect-identification https://insect-detector.syntaxengineer.com/ 301!
-http://syntaxengineer.com/insect-identification https://insect-detector.syntaxengineer.com/ 301!
+https://syntaxengineer.com/insect-identification https://identify-insect.syntaxengineer.com/ 301!
+http://syntaxengineer.com/insect-identification https://identify-insect.syntaxengineer.com/ 301!
 
 # Redirect www subdomain to non-www
-https://www.insect-detector.syntaxengineer.com/* https://insect-detector.syntaxengineer.com/:splat 301!
-http://www.insect-detector.syntaxengineer.com/* https://insect-detector.syntaxengineer.com/:splat 301!
+https://www.insect-detector.syntaxengineer.com/* https://identify-insect.syntaxengineer.com/:splat 301!
+http://www.insect-detector.syntaxengineer.com/* https://identify-insect.syntaxengineer.com/:splat 301!
 
 # Force HTTPS
-http://insect-detector.syntaxengineer.com/* https://insect-detector.syntaxengineer.com/:splat 301!
+http://insect-detector.syntaxengineer.com/* https://identify-insect.syntaxengineer.com/:splat 301!
 
 # SPA fallback - This handles React Router routes
 /*    /index.html   200

@@ -4,7 +4,7 @@ A secure React application that identifies insects using AI-powered image recogn
 
 ## 🌐 Live Demo
 
-**Main Application**: [https://insect-detector.syntaxengineer.com](https://insect-detector.syntaxengineer.com)  
+**Main Application**: [https://identify-insect.syntaxengineer.com](https://identify-insect.syntaxengineer.com)  
 **Parent Domain**: [https://syntaxengineer.com](https://syntaxengineer.com)
 
 ## 🔍 SEO Features
@@ -37,7 +37,7 @@ A secure React application that identifies insects using AI-powered image recogn
 
 ### Subdomain Strategy
 - **Primary Domain**: `syntaxengineer.com` - Main portfolio/business site
-- **App Subdomain**: `insect-detector.syntaxengineer.com` - Dedicated insect identification app
+- **App Subdomain**: `identify-insect.syntaxengineer.com` - Dedicated insect identification app
 - **SEO Benefits**:
   - Domain authority sharing between main domain and subdomain
   - Targeted keyword optimization for insect identification
@@ -46,7 +46,7 @@ A secure React application that identifies insects using AI-powered image recogn
 
 ### URL Structure
 ```
-https://insect-detector.syntaxengineer.com/
+https://identify-insect.syntaxengineer.com/
 ├── / (Homepage - App interface)
 ├── /about (About the application)
 ├── /features (Feature overview)
@@ -122,7 +122,6 @@ npm install
 ### 3. Configure API Key in Supabase
 1. Go to your Supabase dashboard
 2. Navigate to Project Settings → Edge Functions → Environment Variables
-3. Add your Kindwise API key as `KINDWISE_API_KEY`
 
 ### 4. Deploy to Netlify
 The application is configured for automatic deployment to Netlify with:
@@ -168,7 +167,7 @@ To properly configure the subdomain:
 
 ### Search Console
 1. Verify domain ownership in Google Search Console
-2. Submit sitemap: `https://insect-detector.syntaxengineer.com/sitemap.xml`
+2. Submit sitemap: `https://identify-insect.syntaxengineer.com/sitemap.xml`
 3. Monitor search performance and indexing
 
 ## 🔗 SEO Best Practices Implemented
@@ -236,7 +235,7 @@ npm run build
 
 For questions or support regarding the Insect Identification App:
 - **Website**: [https://syntaxengineer.com](https://syntaxengineer.com)
-- **App**: [https://insect-detector.syntaxengineer.com](https://insect-detector.syntaxengineer.com)
+- **App**: [https://identify-insect.syntaxengineer.com](https://identify-insect.syntaxengineer.com)
 
 ## 📄 License
 
