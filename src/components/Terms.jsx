@@ -237,7 +237,7 @@ const Terms = () => {
               <strong>Developer:</strong> <a href="https://sauravkumar.link"  rel="noopener noreferrer">Saurav Kumar</a>
             </div>
             <div className="contact-item">
-              <strong>App:</strong> <a href="https://identify-insect.syntaxengineer.com">identify-insect.syntaxengineer.com</a>
+              <strong>App:</strong> <a href="https://insect-detector.syntaxengineer.com">insect-detector.syntaxengineer.com</a>
             </div>
           </div>
         </section>

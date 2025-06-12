@@ -1,20 +1,21 @@
 import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
-const Navigation = ({ currentView, onViewChange }) => {
+const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const location = useLocation()
 
   const navigationItems = [
-    { id: 'app', label: 'Identify', icon: '🔍', description: 'Upload & identify insects' },
-    { id: 'guide', label: 'Guide', icon: '📚', description: 'Learn about insect groups' },
-    { id: 'facts', label: 'Facts', icon: '🤯', description: 'Amazing insect facts' },
-    { id: 'tips', label: 'Tips', icon: '📷', description: 'Photography tips' },
-    { id: 'features', label: 'Features', icon: '✨', description: 'App features' },
-    { id: 'about', label: 'About', icon: '🌿', description: 'About us' },
-    { id: 'contact', label: 'Contact', icon: '📞', description: 'Get in touch' }
+    { id: '/', label: 'Identify', icon: '🔍', description: 'Upload & identify insects' },
+    { id: '/guide', label: 'Guide', icon: '📚', description: 'Learn about insect groups' },
+    { id: '/facts', label: 'Facts', icon: '🤯', description: 'Amazing insect facts' },
+    { id: '/tips', label: 'Tips', icon: '📷', description: 'Photography tips' },
+    { id: '/features', label: 'Features', icon: '✨', description: 'App features' },
+    { id: '/about', label: 'About', icon: '🌿', description: 'About us' },
+    { id: '/contact', label: 'Contact', icon: '📞', description: 'Get in touch' }
   ]
 
-  const handleNavClick = (viewId) => {
-    onViewChange(viewId)
+  const handleNavClick = () => {
     setIsMenuOpen(false)
   }
 
@@ -34,15 +35,16 @@ const Navigation = ({ currentView, onViewChange }) => {
       {/* Navigation items */}
       <div className={`nav-items ${isMenuOpen ? 'mobile-open' : ''}`}>
         {navigationItems.map((item) => (
-          <button
+          <Link
             key={item.id}
-            className={`nav-item ${currentView === item.id ? 'active' : ''}`}
-            onClick={() => handleNavClick(item.id)}
+            to={item.id}
+            className={`nav-item ${location.pathname === item.id ? 'active' : ''}`}
+            onClick={handleNavClick}
             title={item.description}
           >
             <span className="nav-icon">{item.icon}</span>
             <span className="nav-label">{item.label}</span>
-          </button>
+          </Link>
         ))}
       </div>
 

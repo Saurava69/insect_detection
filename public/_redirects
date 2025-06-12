@@ -11,7 +11,7 @@ http://www.insect-detector.syntaxengineer.com/* https://insect-detector.syntaxen
 # Force HTTPS
 http://insect-detector.syntaxengineer.com/* https://insect-detector.syntaxengineer.com/:splat 301!
 
-# SPA fallback
+# SPA fallback - This handles React Router routes
 /*    /index.html   200
 
 # API routes (if needed)
