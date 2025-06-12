@@ -8,9 +8,6 @@
   "redirects": [
     {
       "source": "/insect-identification",
-      "has": [
-        { "type": "host", "value": "syntaxengineer.com" }
-      ],
       "destination": "https://identify-insect.syntaxengineer.com",
       "permanent": true
     }
