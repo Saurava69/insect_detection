@@ -1,39 +1,43 @@
-const API_KEY = import.meta.env.VITE_KEY 
-const API_URL = import.meta.env.VITE_API
-
+// Updated API service to use secure Supabase Edge Function
 export const identifyInsect = async (imageFile) => {
   if (!imageFile) {
     throw new Error('No image file provided')
   }
 
+  // Get Supabase URL from environment variables
+  const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
+  
+  if (!supabaseUrl) {
+    throw new Error('Supabase URL not configured. Please connect to Supabase.')
+  }
+
+  // Create the edge function URL
+  const edgeFunctionUrl = `${supabaseUrl}/functions/v1/identify-insect`
+
   // Create FormData
   const formData = new FormData()
   formData.append('images', imageFile)
-  formData.append('latitude', 49.207)
-  formData.append('longitude', 16.608)
-  formData.append('similar_images', true)
 
   try {
-    const response = await fetch(
-      API_URL,
-      {
-        method: 'POST',
-        headers: {
-          'Api-Key': API_KEY,
-        },
-        body: formData,
-      }
-    )
+    const response = await fetch(edgeFunctionUrl, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+      },
+      body: formData,
+    })
 
     if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}))
+      
       if (response.status === 401) {
-        throw new Error('Invalid API key. Please check your configuration.')
+        throw new Error('Authentication failed. Please check your Supabase configuration.')
       } else if (response.status === 429) {
         throw new Error('Too many requests. Please try again later.')
       } else if (response.status >= 500) {
         throw new Error('Server error. Please try again later.')
       } else {
-        throw new Error(`Request failed with status ${response.status}`)
+        throw new Error(errorData.error || `Request failed with status ${response.status}`)
       }
     }
 
