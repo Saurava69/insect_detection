@@ -18,7 +18,7 @@ body {
   flex-direction: column;
 }
 .upload-container{
-  !z-index:1;
+  z-index:1;
 }
 .app-header {
   padding: 2rem 1rem;
