@@ -1,35 +1,17 @@
 {
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
   "redirects": [
     {
       "source": "/insect-identification",
       "has": [
         { "type": "host", "value": "syntaxengineer.com" }
       ],
-      "destination": "https://identify-insect.syntaxengineer.com/",
-      "permanent": true
-    },
-    {
-      "source": "/insect-identification",
-      "has": [
-        { "type": "host", "value": "www.syntaxengineer.com" }
-      ],
-      "destination": "https://identify-insect.syntaxengineer.com/",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        { "type": "host", "value": "www.identify-insect.syntaxengineer.com" }
-      ],
-      "destination": "https://identify-insect.syntaxengineer.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        { "type": "host", "value": "http://identify-insect.syntaxengineer.com" }
-      ],
-      "destination": "https://identify-insect.syntaxengineer.com/:path*",
+      "destination": "https://identify-insect.syntaxengineer.com",
       "permanent": true
     }
   ],
