@@ -47,8 +47,8 @@ const Contact = () => {
               <div className="method-icon">🐛</div>
               <h3>App Support</h3>
               <p>For app-specific questions, bug reports, or feature requests related to insect identification.</p>
-              <a href="https://insect-detector.syntaxengineer.com" className="contact-link">
-                insect-detector.syntaxengineer.com
+              <a href="https://identify-insect.syntaxengineer.com" className="contact-link">
+                identify-insect.syntaxengineer.com
               </a>
             </div>
           </div>
