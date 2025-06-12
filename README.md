@@ -143,7 +143,7 @@ To properly configure the subdomain:
 
 1. **Add CNAME Record**:
    ```
-   insect-detector.syntaxengineer.com → netlify-app-name.netlify.app
+   identify-insect.syntaxengineer.com → netlify-app-name.netlify.app
    ```
 
 2. **Configure Netlify**:
