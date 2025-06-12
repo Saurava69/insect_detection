@@ -1,11 +1,11 @@
 # Insect Identification App
 
 A secure React application that identifies insects using AI-powered image recognition, optimized for search engines and deployed on a custom subdomain.
-![Preview](https://identify-insect.syntaxengineer.com/screenshot.png)
+![Preview](https://insect-detector.syntaxengineer.com/screenshot.png)
 
 ## 🌐 Live Demo
 
-**Main Application**: [https://identify-insect.syntaxengineer.com](https://identify-insect.syntaxengineer.com)  
+**Main Application**: [https://insect-detector.syntaxengineer.com](https://insect-detector.syntaxengineer.com)  
 **Parent Domain**: [https://syntaxengineer.com](https://syntaxengineer.com)
 
 ## 🔍 SEO Features
@@ -38,7 +38,7 @@ A secure React application that identifies insects using AI-powered image recogn
 
 ### Subdomain Strategy
 - **Primary Domain**: `syntaxengineer.com` - Main portfolio/business site
-- **App Subdomain**: `identify-insect.syntaxengineer.com` - Dedicated insect identification app
+- **App Subdomain**: `insect-detector.syntaxengineer.com` - Dedicated insect identification app
 - **SEO Benefits**:
   - Domain authority sharing between main domain and subdomain
   - Targeted keyword optimization for insect identification
@@ -47,7 +47,7 @@ A secure React application that identifies insects using AI-powered image recogn
 
 ### URL Structure
 ```
-https://identify-insect.syntaxengineer.com/
+https://insect-detector.syntaxengineer.com/
 ├── / (Homepage - App interface)
 ├── /about (About the application)
 ├── /features (Feature overview)
@@ -143,7 +143,7 @@ To properly configure the subdomain:
 
 1. **Add CNAME Record**:
    ```
-   identify-insect.syntaxengineer.com → netlify-app-name.netlify.app
+   insect-detector.syntaxengineer.com → netlify-app-name.netlify.app
    ```
 
 2. **Configure Netlify**:
@@ -168,7 +168,7 @@ To properly configure the subdomain:
 
 ### Search Console
 1. Verify domain ownership in Google Search Console
-2. Submit sitemap: `https://identify-insect.syntaxengineer.com/sitemap.xml`
+2. Submit sitemap: `https://insect-detector.syntaxengineer.com/sitemap.xml`
 3. Monitor search performance and indexing
 
 ## 🔗 SEO Best Practices Implemented
@@ -232,11 +232,6 @@ npm run build
 # Deploy dist/ folder to your hosting provider
 ```
 
-## 📞 Support & Contact
-
-For questions or support regarding the Insect Identification App:
-- **Website**: [https://syntaxengineer.com](https://syntaxengineer.com)
-- **App**: [https://identify-insect.syntaxengineer.com](https://identify-insect.syntaxengineer.com)
 
 ## 📄 License
 
