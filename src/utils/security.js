@@ -22,22 +22,8 @@ export const isValidUrl = (url) => {
   }
 }
 
-// Prevent context menu and F12 key
+// Initialize security measures (developer tools now enabled)
 export const initializeSecurityMeasures = () => {
-  // Prevent right-click context menu
-  document.addEventListener('contextmenu', (event) => {
-    event.preventDefault()
-  })
-
-  // Prevent F12 and other developer tool shortcuts
-  document.addEventListener('keydown', (event) => {
-    if (
-      event.key === 'F12' ||
-      (event.ctrlKey && event.shiftKey && event.key === 'I') ||
-      (event.ctrlKey && event.shiftKey && event.key === 'C') ||
-      (event.ctrlKey && event.key === 'U')
-    ) {
-      event.preventDefault()
-    }
-  })
+  // Security measures have been relaxed to allow developer tools access
+  console.log('Developer tools access enabled')
 }

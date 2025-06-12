@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://identify-insect.syntaxengineer.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /dist/
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /features
+Allow: /privacy
+Allow: /terms

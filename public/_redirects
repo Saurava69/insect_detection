@@ -1,0 +1,26 @@
+# Netlify redirects file
+
+# Redirect main domain to subdomain for SEO consolidation
+https://syntaxengineer.com/insect-identification https://insect-detector.syntaxengineer.com/ 301!
+http://syntaxengineer.com/insect-identification https://insect-detector.syntaxengineer.com/ 301!
+
+# Redirect www subdomain to non-www
+https://www.insect-detector.syntaxengineer.com/* https://insect-detector.syntaxengineer.com/:splat 301!
+http://www.insect-detector.syntaxengineer.com/* https://insect-detector.syntaxengineer.com/:splat 301!
+
+# Force HTTPS
+http://insect-detector.syntaxengineer.com/* https://insect-detector.syntaxengineer.com/:splat 301!
+
+# SPA fallback
+/*    /index.html   200
+
+# API routes (if needed)
+/api/*  /.netlify/functions/:splat  200
+
+# Security headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
